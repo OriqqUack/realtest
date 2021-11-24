@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="버튼1"
+        android:layout_weight="3"
+        android:onClick="btn1click"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:layout_weight="2"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="버튼3"
+        android:layout_weight="5"
+        />
+
+
+    <!--px=dp*단말 dpi/기본(160)
+      dp=px*기본160/단말 dpi
+      ex)dp=1080*160*420=411.4
+      가론는 1080*160/420
+      세로는 1920*160/420=731.4
+
+      wrap_content 는 기본의 값을 가지고 있기에 등분하기 어렵다 -->
+
+
+</LinearLayout>
