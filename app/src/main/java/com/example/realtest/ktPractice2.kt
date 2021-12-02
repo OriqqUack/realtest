@@ -3,16 +3,11 @@ package com.example.realtest
 //4.조건식
 
 fun main(){
-    checkNum(1)
-}
-fun maxBy(a:Int,b:Int):Int{
-    if(a>b){
-        return a
-    }else{
-        return b
-    }
+forAndWhile()
 }
 
+/*
+4.조건식
 fun maxBy2(a:Int,b:Int):Int=if(a>b)a else b
 
 fun checkNum(score:Int){
@@ -36,8 +31,9 @@ fun checkNum(score:Int){
         in 10..80->println("not bad")
         else->println("Okay");
     }
+*/
 
-}
+
 
 //Expression vs Statement
 //코틀린의 모든 함수는 expression으로 반환형이 항상 있다.
@@ -66,3 +62,96 @@ fun array(){
     //list는 배열이 순차적으로 쌓이기에 데이터를 빈틈없이 적재 할 수 있다,
     //array는 데이터를 추가하거나 제거를 할 수 있는 장점이 있다.list는 안됨.
 }
+
+// 6.For/while
+
+fun forAndWhile() {
+
+    val students = arrayListOf("joyce", "james", "jenny")
+
+    for (nmae in students) {
+        println("${nmae}")
+    }
+
+    var sum:Int=0
+    for(i in 1 until 100){ //1..100과는 다른점은 100은 포함하지 않는것.
+        sum+=i
+
+    }
+    println(sum)
+
+    var index=0
+    while (index<=10){
+        println("current index: ${index}")
+        index++
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
