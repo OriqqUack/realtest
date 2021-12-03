@@ -81,13 +81,14 @@ fun forAndWhile() {
     println(sum)
 
     var index=0
+    for((index:Int,name:String)in students.withIndex()){
+        println("${index+1}번째 학생: ${name}")
+    }
     while (index<=10){
         println("current index: ${index}")
         index++
     }
 }
-
-
 
 
 
